@@ -1,0 +1,106 @@
+
+@font-face {
+	font-family: 'myFont';
+	src:  url('lato.ttf');
+}
+
+@font-face {
+	font-family: 'myFontItalic';
+	src:  url('lato-italic.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "myFont";
+  font-size: 17px;
+}
+
+
+:root {
+  --pageBC: #111111;
+  --terminalBC: #0d0d0d;
+  --terminalShadow: #0a0a0a;
+  --textGray: #d3d2c7;
+  --tildeC: #ffffff;
+  --yellow: #f4f482;
+  --red: #d81a20;
+  --blue: #398eb2;
+  --green: #34d180;
+  --greenishBlue: #34d180;
+}
+
+body {
+  background-color: var(--pageBC);
+  margin-top: 5%;
+  background-image: url('wall.jpg');
+  background-size: cover;
+}
+
+section {
+  background-color: var(--terminalBC);
+  width: 50%;
+  opacity: 0.96;
+  padding-left: 2%;
+  margin-bottom: 1.2%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 5px 5px var(--terminalShadow);
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.halfBreak {
+  margin-bottom: 1.5%;
+}
+
+.fullBreak {
+  margin-bottom: 2%;
+}
+
+.myFont {
+  font-family: 'myFont';
+}
+.myFontItalic {
+  font-family: 'myFontItalic';
+}
+
+.tilde {
+  color: var(--tildeC);
+  font-family: monospace;
+}
+
+.tilde::before {
+  content: "~";
+}
+
+.welcome, .links{
+  display: inline-block;
+  color: var(--textGray);
+}
+
+.openAllAnchor{
+  color: var(--textGray);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.red {
+  color: var(--red);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.green {
+  color: var(--green);
+}
+
+.greenishBlue {
+  color: var(--greenishBlue);
+}
