@@ -52,6 +52,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: var(--green);
+}
+
 .halfBreak {
   margin-bottom: 1.5%;
 }
