@@ -1,5 +1,5 @@
 # Startpage
-![](https://github.com/GauravChaddha1996/startpage/blob/master/screenshots/screenshot1.png)
+<img src="https://raw.githubusercontent.com/GauravChaddha1996/startpage/master/screenshots/screenshot1.png">
 My custom startpage which acts as the home for my browser. It is served by a local http server coded in python and starts as a startup application on my Ubuntu installation. The HTML lives in the startpage.html, css in main.css while logic resides in app.js. 
 
 <img src="https://raw.githubusercontent.com/GauravChaddha1996/startpage/master/screenshots/screenshot0.png" width="40%"> <img src="https://raw.githubusercontent.com/GauravChaddha1996/startpage/master/screenshots/screenshot2.png" width="40%">
