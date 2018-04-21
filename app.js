@@ -20,7 +20,7 @@ function init() {
     readTextFile("config.json", function (text) {
         var config = JSON.parse(text)
         loadConfig(config)
-        setOnClicks()
+        setOnClicks(config)
     })
     decideBackgroundImage()
     startTime()
@@ -52,7 +52,7 @@ function loadConfig(config) {
         config.hasOwnProperty("linkHoverColor") ? config.linkHoverColor : defaultConfig.linkHoverColor);
 
     var categories = config.categories.map(function (value) {
-        return '<br class="fullBreak"> ' + '<span class="tilde">' +
+        return '<br class="fullBreak"> ' + '<span class="tilde" />' +
             '<a class="link openAllAnchor myFontItalic" href="#" > ' + value.name + '</a>' +
             '<br class="halfBreak"> </span>' + '<span class="arrow"> 🡒 </span>' +
             value.links.map(function (value2) {
@@ -63,12 +63,12 @@ function loadConfig(config) {
     document.getElementById('js-categories').innerHTML = categories
 }
 
-function setOnClicks() {
+function setOnClicks(config) {
     var elements = document.getElementsByClassName("openAllAnchor")
     for (var i = 0; i < elements.length; i++) {
         elements.item(i).addEventListener('click', function () {
             var name = this.text.trim()
-            defaultConfig.categories.filter(function (value) {
+            config.categories.filter(function (value) {
                 return name === value.name
             }).forEach(function (value) {
                 value.links.reverse().forEach(function (value2) {
