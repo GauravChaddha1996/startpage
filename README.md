@@ -4,8 +4,8 @@ My custom startpage which acts as the home for my browser. It is served by a loc
 
 | Screenshots |  |
 |----------|----------|
-| <img src="https://github.com/GauravChaddha1996/startpage/blob/master/screenshots/screenshot0.png"> |                           <img src="https://github.com/GauravChaddha1996/startpage/blob/master/screenshots/screenshot2.png"> |
-| <img src="https://github.com/GauravChaddha1996/startpage/blob/master/screenshots/screenshot3.png"> |                           <img src="https://github.com/GauravChaddha1996/startpage/blob/master/screenshots/screenshot4.png"> |
+| <img src="https://raw.githubusercontent.com/GauravChaddha1996/startpage/master/screenshots/screenshot0.png"> |                           <img src="https://raw.githubusercontent.com/GauravChaddha1996/startpage/master/screenshots/screenshot2.png"> |
+| <img src="https://raw.githubusercontent.com/GauravChaddha1996/startpage/master/screenshots/screenshot3.png"> |                           <img src="https://raw.githubusercontent.com/GauravChaddha1996/startpage/master/screenshots/screenshot4.png"> |
 
 
 
