@@ -1,5 +1,5 @@
 # Startpage
-![](https://github.com/GauravChaddha1996/startpage/blob/master/screenshot.png)
+![](/home/gaurav/Projects/startpage/screenshots/screenshot0.png)
 My custom startpage which acts as the home for my browser. It is served by a local http server coded in python and starts as a startup application on my Ubuntu installation. The HTML lives in the startpage.html, css in main.css while logic resides in app.js. 
 
 **config.json** holds the configuration data about colors and links. 
