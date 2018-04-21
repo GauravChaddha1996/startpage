@@ -1,0 +1,61 @@
+{
+  "name": "startpage",
+  "version": "0.0.1",
+
+  "pageBG": "#111111",
+  "terminalBG": "#0d0d0d",
+  "terminalShadow": "#0a0a0a",
+  "tildeColor": "#ffffff",
+  "arrowColor": "#d3d2c7",
+  "textColor": "#d3d2c7",
+  "echoColor": "#398eb2",
+  "nameColor": "#d81a20",
+  "openAllColor": "#d3d2c7",
+  "linkColor": "#398eb2",
+  "linkHoverColor": "#34d180",
+
+  "categories": [
+    {
+      "name": "General",
+      "links": [
+        {"name": "Gmail", "link": "http://gmail.com/"},
+        {"name": "Gmail 2", "link": "https://mail.google.com/mail/u/1/#inbox"},
+        {"name": "Trello", "link": "https://trello.com/"}
+      ]
+    },
+    {
+      "name": "Tech",
+      "links": [
+        {"name": "Hackernews", "link": "http://news.ycombinator.com/"},
+        {"name": "Techcrunch", "link": "http://techcrunch.com/"}
+      ]
+    },
+    {
+      "name": "Read",
+      "links": [
+        {"name": "Github", "link": "https://github.com"},
+        {"name": "Dev.to", "link": "http://dev.to/"},
+        {"name": "LinkedIn", "link": "http://linkedin.com/"},
+        {"name": "Medium", "link": "http://medium.com/"},
+        {"name": "Pocket", "link": "https://getpocket.com/"}
+      ]
+    },
+    {
+      "name": "Design",
+      "links": [
+        {"name": "Behance", "link": "https://www.behance.net/"},
+        {"name": "Dribble", "link": "https://dribbble.com/"}
+      ]
+    },
+    {
+      "name": "Reddit",
+      "links": [
+        {"name": "Frontpage", "link": "https://www.reddit.com/"},
+        {"name": "/r/androiddev", "link": "https://www.reddit.com/r/androiddev/"},
+        {"name": "/r/Futurology", "link": "https://www.reddit.com/r/Futurology/"},
+        {"name": "/r/tech", "link": "https://www.reddit.com/r/tech/"},
+        {"name": "/r/unixporn", "link": "https://www.reddit.com/r/unixporn/"}
+      ]
+    }
+  ]
+}

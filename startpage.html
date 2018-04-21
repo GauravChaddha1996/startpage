@@ -1,132 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Startpage</title>
     <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="app.js"></script>
 
-    <script type="text/javascript">
-			function startTime()
-			{
-				var today=new Date();
-				var h=today.getHours();
-				var m=today.getMinutes();
-				var s=today.getSeconds();
-        var ampm = h >=12 ? 'pm' : 'am'
-				m=checkTime(m);
-				s=checkTime(s);
-				document.getElementById('time').innerHTML=h+":"+m+":"+s +" "+ ampm;
-				t=setTimeout('startTime()',500);
-			}
-			function checkTime(i)
-			{
-				if (i<10)
-				{
-					i="0" + i;
-				}
-				return i;
-			}
-		</script>
+</head>
 
-  </head>
-  <body onload="startTime()">
-    <!--  -->
-
-    <section>
-      <h3 class="welcome">
+<body id="body">
+<section>
+    <h3 class="welcome">
         <span class="tilde"> <br> </span>
-        <span class="red"> 🡒 </span>
-        <span class="blue"> echo "</span>
+        <span class="arrow"> 🡒 </span>
+        <span class="echo"> echo "</span>
         Welcome
-        <span class="red myFontItalic"> Gaurav! </span>
+        <span class="name italicText"> Gaurav! </span>
         Current time is
-        <span class="red myFontItalic" id="time"></span>
-        <span class="blue"> " </span>
-      </h3>
-    </section>
+        <span class="name italicText" id="js-time"></span>
+        <span class="echo"> " </span>
+    </h3>
+</section>
 
-    <section>
-      <h3 class="links">
-        <br>
-        <span class="tilde">
-          <a class="openAllAnchor myFontItalic" href="#"
-          onclick = "
-          window.open('https://trello.com/');
-          window.open('https://mail.google.com/mail/u/1/#inbox');
-          window.open('http://gmail.com/');
-          ">
-          General</a>
-        <br class="halfBreak"> </span>
-        <span class="red"> 🡒 </span>
-        <a href="http://gmail.com/" target="_blank">Gmail &nbsp</a>
-        <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">Gmail 2 &nbsp</a>
-        <a href="http://trello.com/" target="_blank">Trello &nbsp </a>
+<section id="js-categories"> </section>
 
-        <br class="fullBreak">
-        <span class="tilde">
-          <a class="openAllAnchor myFontItalic" href="#"
-          onclick = "
-          window.open('http://techcrunch.com/');
-          window.open('http://news.ycombinator.com/');">
-          Social</a>
-        <br class="halfBreak"> </span>
-        <span class="red"> 🡒 </span>
-        <a href="http://news.ycombinator.com/" target="_blank">Hackernews &nbsp</a>
-        <a href="http://techcrunch.com/" target="_blank">TechCrunch &nbsp</a>
+</body>
 
 
-        <br class="fullBreak">
-        <span class="tilde">
-          <a class="openAllAnchor myFontItalic" href="#"
-          onclick = "
-          window.open('https://getpocket.com/');
-          window.open('http://medium.com/');
-          window.open('http://linkedin.com/');
-          window.open('http://dev.to/');
-          window.open('https://github.com');">
-          Read</a>
-        <br class="halfBreak"></span>
-
-        <span class="red"> 🡒 </span>
-        <a href="https://github.com" target="_blank">Github &nbsp</a>
-        <a href="http://dev.to/" target="_blank">Dev.to &nbsp</a>
-        <a href="http://linkedin.com/" target="_blank">LinkedIn &nbsp</a>
-        <a href="https://medium.com/" target="_blank">Medium &nbsp</a>
-        <a href="http://getpocket.com/" target="_blank">Pocket &nbsp</a>
-
-        <br class="fullBreak">
-        <span class="tilde">
-          <a class="openAllAnchor myFontItalic" href="#"
-          onclick = "
-          window.open('https://www.behance.net/');
-          window.open('https://dribbble.com/');">
-          Design</a>
-        <br class="halfBreak"> </span>
-        <span class="red"> 🡒 </span>
-        <a href="https://dribbble.com/" target="_blank">Dribble &nbsp</a>
-        <a href="https://www.behance.net/" target="_blank">Behance &nbsp</a>
-
-        <br class="fullBreak">
-        <span class="tilde">
-          <a class="openAllAnchor myFontItalic" href="#"
-          onclick = "
-          window.open('https://www.reddit.com/r/unixporn/');
-          window.open('https://www.reddit.com/r/tech/');
-          window.open('https://www.reddit.com/r/Futurology/');
-          window.open('https://www.reddit.com/r/androiddev/');
-          window.open('https://www.reddit.com/');
-          ">
-          Reddit</a>
-        <br class="halfBreak"> </span>
-        <span class="red"> 🡒 </span>
-        <a href="https://www.reddit.com/" target="_blank">Front Page &nbsp</a>
-        <a href="https://www.reddit.com/r/androiddev/" target="_blank">/r/androiddev &nbsp</a>
-        <a href="https://www.reddit.com/r/Futurology/" target="_blank">/r/Futurology &nbsp</a>
-        <a href="https://www.reddit.com/r/tech/" target="_blank">/r/tech &nbsp</a>
-        <a href="https://www.reddit.com/r/unixporn/" target="_blank">/r/unixporn &nbsp</a>
-      </h3>
-    </section>
-    <br>
-
-  </body>
+</body>
 </html>

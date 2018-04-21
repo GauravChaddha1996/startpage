@@ -1,110 +1,87 @@
-
 @font-face {
-	font-family: 'myFont';
-	src:  url('lato.ttf');
+    font-family: 'myFont';
+    src: url('myFont.ttf');
 }
 
 @font-face {
-	font-family: 'myFontItalic';
-	src:  url('lato-italic.ttf');
+    font-family: 'myFontItalic';
+    src: url('myFont-italic.ttf');
 }
 
 * {
-  box-sizing: border-box;
-  font-family: "myFont";
-  font-size: 17px;
+    box-sizing: border-box;
+    font-family: "myFont", serif;
+    font-size: 17px;
 }
 
-
-:root {
-  --pageBC: #111111;
-  --terminalBC: #0d0d0d;
-  --terminalShadow: #0a0a0a;
-  --textGray: #d3d2c7;
-  --tildeC: #ffffff;
-  --yellow: #f4f482;
-  --red: #d81a20;
-  --blue: #398eb2;
-  --green: #34d180;
-  --greenishBlue: #34d180;
+.italicText{
+    font-family: 'myFontItalic';
 }
 
 body {
-  background-color: var(--pageBC);
-  margin-top: 5%;
-  background-image: url('wall.jpg');
-  background-size: cover;
+    margin-top: 5%;
+    background-color: var(--pageBG);
+    background-size: cover;
 }
 
 section {
-  background-color: var(--terminalBC);
-  width: 50%;
-  opacity: 0.96;
-  padding-left: 2%;
-  margin-bottom: 1.2%;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 5px 5px 5px var(--terminalShadow);
-}
-
-a {
-  color: var(--blue);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--green);
+    background-color: var(--terminalBG);
+    width: 50%;
+    opacity: 0.96;
+    padding-left: 2%;
+    margin-bottom: 1.2%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 5px var(--terminalShadow);
 }
 
 .halfBreak {
-  margin-bottom: 1.5%;
+    margin-bottom: 1.5%;
 }
 
 .fullBreak {
-  margin-bottom: 2%;
+    margin-bottom: 2%;
 }
 
-.myFont {
-  font-family: 'myFont';
+
+.link {
+    color: var(--linkColor);
+    text-decoration: none;
 }
-.myFontItalic {
-  font-family: 'myFontItalic';
+
+.link:hover {
+    color: var(--linkHoverColor);
 }
+
 
 .tilde {
-  color: var(--tildeC);
-  font-family: monospace;
+    color: var(--tildeColor);
+    font-family: monospace;
 }
 
 .tilde::before {
-  content: "~";
+    content: "~";
 }
 
-.welcome, .links{
-  display: inline-block;
-  color: var(--textGray);
+.arrow {
+    color: var(--arrowColor);
 }
 
-.openAllAnchor{
-  color: var(--textGray);
+.echo {
+    color: var(--echoColor);
 }
 
-.yellow {
-  color: var(--yellow);
+.name {
+    color: var(--nameColor);
 }
 
-.red {
-  color: var(--red);
+.welcome, .links {
+    display: inline-block;
+    color: var(--textColor);
 }
 
-.blue {
-  color: var(--blue);
+.openAllAnchor {
+    color: var(--openAllColor);
 }
 
-.green {
-  color: var(--green);
-}
 
-.greenishBlue {
-  color: var(--greenishBlue);
-}
