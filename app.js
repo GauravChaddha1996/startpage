@@ -81,7 +81,7 @@ function setOnClicks(config) {
 
 function decideBackgroundImage() {
     document.getElementById("body").style.setProperty("background-image", "url('" +
-        "images/wall" + Math.floor(Math.random() * 5) + ".jpg"
+        "images/wall" + Math.floor(Math.random() * 13) + ".jpg"
         + "')")
 }
 
