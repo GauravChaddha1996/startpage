@@ -26,16 +26,9 @@
     {
       "name": "Tech",
       "links": [
-        {"name": "Hackernews", "link": "http://news.ycombinator.com/"},
-        {"name": "Techcrunch", "link": "http://techcrunch.com/"}
-      ]
-    },
-    {
-      "name": "Read",
-      "links": [
         {"name": "Github", "link": "https://github.com"},
+        {"name": "Hackernews", "link": "http://hckrnews.com/"},
         {"name": "Dev.to", "link": "http://dev.to/"},
-        {"name": "LinkedIn", "link": "http://linkedin.com/"},
         {"name": "Medium", "link": "http://medium.com/"},
         {"name": "Pocket", "link": "https://getpocket.com/"}
       ]
@@ -53,8 +46,7 @@
         {"name": "Frontpage", "link": "https://www.reddit.com/"},
         {"name": "/r/androiddev", "link": "https://www.reddit.com/r/androiddev/"},
         {"name": "/r/Futurology", "link": "https://www.reddit.com/r/Futurology/"},
-        {"name": "/r/tech", "link": "https://www.reddit.com/r/tech/"},
-        {"name": "/r/unixporn", "link": "https://www.reddit.com/r/unixporn/"}
+        {"name": "/r/tech", "link": "https://www.reddit.com/r/tech/"}
       ]
     }
   ]
