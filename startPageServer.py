@@ -4,7 +4,7 @@ import os
 
 PORT = 8001
 
-os.chdir('/home/gaurav/Projects/startpage/')
+#os.chdir('Projects/startpage/')
 
 Handler = http.server.SimpleHTTPRequestHandler
 httpd = socketserver.TCPServer(("", PORT), Handler)

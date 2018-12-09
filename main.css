@@ -8,6 +8,12 @@
     src: url('myFont-italic.ttf');
 }
 
+@font-face {
+    font-family: 'fontAwesome';
+    src: url('fontAwesome.otf');
+    font-size: 11px;
+}
+
 * {
     box-sizing: border-box;
     font-family: "myFont", serif;
@@ -65,6 +71,8 @@ section {
 
 .arrow {
     color: var(--arrowColor);
+    font-family: "fontAwesome";
+    font-size: 14px;
 }
 
 .echo {

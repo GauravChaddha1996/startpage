@@ -54,7 +54,7 @@ function loadConfig(config) {
     var categories = config.categories.map(function (value) {
         return '<br class="fullBreak"> ' + '<span class="tilde" />' +
             '<a class="link openAllAnchor myFontItalic" href="#" > ' + value.name + '</a>' +
-            '<br class="halfBreak"> </span>' + '<span class="arrow"> 🡒 </span>' +
+            '<br class="halfBreak"> </span>' + '<span class="arrow">  </span>' +
             value.links.map(function (value2) {
                 return '<a class="link" href="' + value2.link + '" target = "_blank" > ' + value2.name + ' &nbsp </a>'
             }).join('')
@@ -80,9 +80,14 @@ function setOnClicks(config) {
 }
 
 function decideBackgroundImage() {
-    document.getElementById("body").style.setProperty("background-image", "url('" +
+    document.getElementById("body").style.setProperty("background", "url('" +
         "images/wall" + Math.floor(Math.random() * 13) + ".jpg"
-        + "')")
+        + "') no-repeat center center fixed")
+    document.getElementById("body").style.setProperty("-webkit-background-size","cover")
+    document.getElementById("body").style.setProperty("-moz-background-size","cover")
+    document.getElementById("body").style.setProperty("-o-background-size","cover")
+    document.getElementById("body").style.setProperty("background-size","cover")
+
 }
 
 function startTime() {
