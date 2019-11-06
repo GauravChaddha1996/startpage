@@ -1,25 +1,28 @@
 {
   "name": "startpage",
-  "version": "0.0.1",
+  "version": "0.0.2",
 
   "pageBG": "#111111",
-  "terminalBG": "#0d0d0d",
-  "terminalShadow": "#0a0a0a",
+  "terminalBG": "#070728",
+  "terminalShadow": "#1d1d3b",
+  "echoColor": "#f3c677",
+  "nameColor": "#b33f62",
+  "openAllColor": "#d3d2c7",
+  "linkColor": "#b33f62",
+  "linkHoverColor": "#f3c677",
+
   "tildeColor": "#ffffff",
   "arrowColor": "#d3d2c7",
   "textColor": "#d3d2c7",
-  "echoColor": "#398eb2",
-  "nameColor": "#d81a20",
-  "openAllColor": "#d3d2c7",
-  "linkColor": "#398eb2",
-  "linkHoverColor": "#34d180",
+
 
   "categories": [
     {
       "name": "General",
       "links": [
-        {"name": "Gmail", "link": "http://gmail.com/"},
-        {"name": "Gmail 2", "link": "https://mail.google.com/mail/u/1/#inbox"},
+        {"name": "Gmail 1", "link": "https://mail.google.com/mail/u/1/#inbox"},
+        {"name": "Gmail 2", "link": "https://mail.google.com/mail/u/2/#inbox"},
+        {"name": "Gmail work", "link": "http://gmail.com/"},
         {"name": "Trello", "link": "https://trello.com/"}
       ]
     },
@@ -31,13 +34,6 @@
         {"name": "Dev.to", "link": "http://dev.to/"},
         {"name": "Medium", "link": "http://medium.com/"},
         {"name": "Pocket", "link": "https://getpocket.com/"}
-      ]
-    },
-    {
-      "name": "Design",
-      "links": [
-        {"name": "Behance", "link": "https://www.behance.net/"},
-        {"name": "Dribble", "link": "https://dribbble.com/"}
       ]
     },
     {
