@@ -1,44 +1,27 @@
-@font-face {
-    font-family: 'myFont';
-    src: url('myFont.ttf');
-}
-
-@font-face {
-    font-family: 'myFontItalic';
-    src: url('myFont-italic.ttf');
-}
-
-@font-face {
-    font-family: 'fontAwesome';
-    src: url('fontAwesome.otf');
-    font-size: 11px;
-}
-
-* {
-    box-sizing: border-box;
-    font-family: "myFont", serif;
-    font-size: 17px;
-}
-
-.italicText{
-    font-family: 'myFontItalic';
-}
-
 body {
     margin-top: 5%;
     background-color: var(--pageBG);
     background-size: cover;
 }
 
-section {
+.section {
     background-color: var(--terminalBG);
-    width: 50%;
-    opacity: 0.96;
-    padding-left: 2%;
-    margin-bottom: 1.2%;
-    margin-left: auto;
-    margin-right: auto;
+    opacity: 0.85;
+    padding: 2%;
+    display: inline-block;
+    vertical-align: top;
+    margin:1%;
+    text-align: justify;
     box-shadow: 5px 5px 5px var(--terminalShadow);
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    text-align: center;
 }
 
 .halfBreak {
@@ -46,7 +29,7 @@ section {
 }
 
 .fullBreak {
-    margin-bottom: 2%;
+    margin-bottom: 7%;
 }
 
 
@@ -59,32 +42,14 @@ section {
     color: var(--linkHoverColor);
 }
 
-
-.tilde {
-    color: var(--tildeColor);
-    font-family: monospace;
-}
-
-.tilde::before {
-    content: "~";
-}
-
-.arrow {
-    color: var(--arrowColor);
-    font-family: "fontAwesome";
-    font-size: 14px;
-}
-
-.echo {
-    color: var(--echoColor);
-}
-
 .name {
     color: var(--nameColor);
 }
 
 .welcome, .links {
     display: inline-block;
+    padding-left: 2.35%;
+    padding-right: 2.35%;
     color: var(--textColor);
 }
 

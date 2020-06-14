@@ -51,16 +51,13 @@ function loadConfig(config) {
     html.style.setProperty('--linkHoverColor',
         config.hasOwnProperty("linkHoverColor") ? config.linkHoverColor : defaultConfig.linkHoverColor);
 
-    var categories = config.categories.map(function (value) {
-        return '<br class="fullBreak"> ' + '<span class="tilde" />' +
-            '<a class="link openAllAnchor myFontItalic" href="#" > ' + value.name + '</a>' +
-            '<br class="halfBreak"> </span>' + '<span class="arrow">  </span>' +
-            value.links.map(function (value2) {
-                return '<a class="link" href="' + value2.link + '" target = "_blank" > ' + value2.name + ' &nbsp </a>'
-            }).join('')
-    }).join('');
-    categories = "<h3>" + categories + "</h3> <br class=>"
-    document.getElementById('js-categories').innerHTML = categories
+    document.getElementById('js-categories').innerHTML = config.categories.map(function (value) {
+        return '<div class="section"> ' +
+            '<a class="link openAllAnchor myFontItalic" href="#" > <b>' + value.name + '</b></a>' +
+            '<br class="halfBreak"> <br>' + value.links.map(function (value2) {
+                return '<a class="link" href="' + value2.link + '" target = "_blank" > ' + value2.name + '</a>'
+            }).join('<br class="fullBreak">') + '</div>'
+    }).join('')
 }
 
 function setOnClicks(config) {
