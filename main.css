@@ -47,10 +47,10 @@ body {
 }
 
 .welcome, .links {
-    display: inline-block;
-    padding-left: 2.35%;
-    padding-right: 2.35%;
+    display: inline-grid;
+    text-align: center;
     color: var(--textColor);
+    box-shadow: unset !important;
 }
 
 .openAllAnchor {
